@@ -61,3 +61,72 @@ section {
   display: flex;
   justify-content: space-between;
 }
+
+.redBox {
+  width: 300px;
+  height: 300px;
+  background-color: red;
+}
+
+@media (max-width: 426px) {
+  .redBox {
+    width: 200px;
+    height: 200px;
+    background-color: green;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 769px) {
+  .redBox {
+    background-color: orange;
+  }
+}
+
+@media (orientation: landscape) {
+  .redBox {
+    height: 200px;
+    width: 300px;
+    background-color: blue;
+  }
+}
+
+.projectCard {
+  border: 2px solid black;
+  width: 300px;
+  padding: 8px;
+}
+
+.projectDivider {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+@media (max-width: 426px) {
+  .projectDivider {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+a:link, a:visited {
+  color: black;
+}
+
+a:focus, a:hover {
+  color: red
+}
+
+.container {
+  width: 100%;
+  display: flex;
+}
+
+.information, .image {
+  width: 50%;
+  border: 2px solid black;
+}
+
+.image img {
+  width: 100%;
+}
